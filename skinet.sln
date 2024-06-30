@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "skinet\API.csproj", "{C905C1ED-C0FF-4F3E-AA87-93C273EF457E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{DF4BB5FB-9DA3-41A0-B38C-F5B2AB254283}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{1E0AE4C7-66CE-4BB1-9BDB-1F46AF854BFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C905C1ED-C0FF-4F3E-AA87-93C273EF457E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C905C1ED-C0FF-4F3E-AA87-93C273EF457E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C905C1ED-C0FF-4F3E-AA87-93C273EF457E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C905C1ED-C0FF-4F3E-AA87-93C273EF457E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4BB5FB-9DA3-41A0-B38C-F5B2AB254283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4BB5FB-9DA3-41A0-B38C-F5B2AB254283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4BB5FB-9DA3-41A0-B38C-F5B2AB254283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4BB5FB-9DA3-41A0-B38C-F5B2AB254283}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E0AE4C7-66CE-4BB1-9BDB-1F46AF854BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E0AE4C7-66CE-4BB1-9BDB-1F46AF854BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E0AE4C7-66CE-4BB1-9BDB-1F46AF854BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E0AE4C7-66CE-4BB1-9BDB-1F46AF854BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {264648CF-FEA5-44AA-9C35-42D3CB0363AF}
+	EndGlobalSection
+EndGlobal
