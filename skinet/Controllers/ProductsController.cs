@@ -1,4 +1,5 @@
 ﻿using API.DTOs;
+using API.Errors;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
@@ -11,9 +12,7 @@ using System.Threading.Tasks;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ProductsController : ControllerBase
+    public class ProductsController : BaseAPIController
     {
         private readonly IGenericRepository<Product> _productRepository;
         private readonly IGenericRepository<ProductType> _productTypeRepository;
@@ -43,6 +42,8 @@ namespace API.Controllers
         {
             var spec = new ProductsWithTypesAndBrandsSpecification(id);
             var product= await _productRepository.GetWithSpecification(spec);
+            if (product == null)
+                return NotFound(new APIResponse(404));
             return _mapper.Map<Product,ProductDTO>(product);
         }
         [HttpGet("brands")]
