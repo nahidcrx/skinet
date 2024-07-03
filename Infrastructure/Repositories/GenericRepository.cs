@@ -35,6 +35,10 @@ namespace Infrastructure.Repositories
         {
             return await ApplySpecification(specification).FirstOrDefaultAsync();
         }
+        async Task<int> IGenericRepository<T>.CountAsync(ISpecification<T> specification)
+        {
+            return await ApplySpecification(specification).CountAsync();
+        }
         private IQueryable<T> ApplySpecification(ISpecification<T> specification) 
         {
             return SpecificationEvaluator<T>.GetQuery(_context.Set<T>().AsQueryable(),specification);
