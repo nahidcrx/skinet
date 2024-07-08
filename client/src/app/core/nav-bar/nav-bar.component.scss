@@ -10,3 +10,19 @@
     top: -15px;
     right: 35px;
 }
+a {
+    text-decoration: none;
+    color: #343A40;
+
+    &.router-link-active{
+        color: orange;
+    }
+}
+
+.logo{
+    cursor: pointer;
+
+    &:focus{
+        outline: none;
+    }
+}
